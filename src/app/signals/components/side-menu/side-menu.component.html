@@ -1,0 +1,13 @@
+<ul class="list-group">
+  <li
+    *ngFor="let item of menuItems()"
+    class="list-group-item"
+    [routerLink]="item.route"
+    routerLinkActive="active"
+  >
+    {{ item.title }}
+  </li>
+</ul>
+
+<!-- referencia de la señal pero no el valor de la señal en sí -->
+<!-- {{ menuItems() }} -->
